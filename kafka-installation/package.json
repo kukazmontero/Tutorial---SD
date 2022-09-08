@@ -1,0 +1,19 @@
+{
+  "name": "kafka-tuto",
+  "version": "1.0.0",
+  "description": "tutorial distribuidos",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start:producer": "node ./client/index.js",
+    "start:consumer": "node ./server/index.js"
+  },
+  "author": "abel",
+  "license": "ISC",
+  "keywords": [],
+  "dependencies": {
+    "avsc": "^5.7.5",
+    "kafka-node": "^5.0.0",
+    "node-rdkafka": "^2.13.0"
+  }
+}
