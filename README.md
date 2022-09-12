@@ -2,14 +2,34 @@
   <p align="left">
    <img src="https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green">
    </p>
+   
+## :hammer:Funcionalidad del proyecto
+- `Funcionalidad`: Entender el funcionamiento de Apache-kafka para streamming
+
+
+
+
 <h1 align='center'>TUTORIAL<h1>
 <h3 align='center'>**************COMANDOS********************</h3>
-correr el docker en la carpeta instalada:
-	$sudo docker-compose up
-Instalar nodejs
+	
+📁 Acceso al proyecto
+
+**Descargar el archivo desde el repositorio de github o hacer un clone mediante consola de comandos.**
+
+🛠️ Abre y ejecuta el proyecto
+**Antes de trabajar, es necesario estar dentro de la carpeta instalada.**
+**Instalar Dependencias**
+```
+	sudo apt update
 	$sudo apt-get install nodejs
 	$sudo apt install npm
+```
 	
+**correr el docker en la carpeta instalada:**
+```
+	$sudo docker-compose up
+```
+
 Iniciamos npm
 	$npm i node-rdkafka
 	
