@@ -34,11 +34,11 @@
 	$sudo docker-compose up
 ```
 
-Iniciamos npm
+Instalar node-rdkafka
 ```
 	$npm i node-rdkafka
 ```	
-Topic Docker
+Crear topic ingresando al container kafka en docker
 ```
 	$sudo docker exec -it kafka /opt/bitnami/kafka/bin/kafka-topics.sh \
 	    --create \
@@ -50,11 +50,11 @@ Topic Docker
 Iniciamos las conexiones cliente/ servidor
 
 Producer -> 
-Servidor
+Cliente
 ```
 	$npm run start:producer	   
 ```
-Cliente
+Servidor
 ```
 	$npm run start:consumer
 ```
