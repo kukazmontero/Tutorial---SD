@@ -9,7 +9,7 @@
 
 
 
-##<h1 align='center'>TUTORIAL<h1>
+<h1 align='center'>TUTORIAL<h1>
 <h3>COMANDOS</h3>
 	
 📁 Acceso al proyecto
