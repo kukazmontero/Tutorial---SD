@@ -58,3 +58,7 @@ Cliente
 ```
 	$npm run start:consumer
 ```
+## Autores
+
+| [<img src="https://www.geekmi.news/__export/1644190196029/sites/debate/img/2022/02/06/zenitsu4.jpg_172596871.jpg" width=115><br><sub>Abel Baulloza</sub>](https://github.com/Dharknight) |  [<img src="https://www.unotv.com/uploads/2020/08/loco-valdes.jpg" width=115><br><sub>Diego Carrillo</sub>](https://github.com/Carro1331) |  [<img src="https://zonadeprensard.com/wp-content/uploads/2022/01/Inosuke-Hashibara-Demon-Slayer-1200x675.jpg" width=115><br><sub>Kukaz Montero</sub>](https://github.com/kukazmontero) |
+| :---: | :---: | :---: |
