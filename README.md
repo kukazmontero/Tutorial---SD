@@ -1,5 +1,9 @@
-# Tutorial---SD \\
-**************COMANDOS********************
+<em> Tutorial---SD </em>
+  <p align="left">
+   <img src="https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green">
+   </p>
+<h1 align='center'>TUTORIAL<h1>
+<h3 align='center'>**************COMANDOS********************</h3>
 correr el docker en la carpeta instalada:
 	$sudo docker-compose up
 Instalar nodejs
