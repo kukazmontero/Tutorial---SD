@@ -102,7 +102,7 @@ Es importante descomprimir el .zip
 	$sudo docker exec -it kafka /bin/bash
 ```
 ```
-$kafka-console-producer --topic sentences --bootstrap-server localhost:9092
+	$kafka-console-producer --topic sentences --bootstrap-server localhost:9092
 
 ```
 
