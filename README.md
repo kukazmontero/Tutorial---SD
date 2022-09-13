@@ -1,8 +1,7 @@
 <em> Tutorial---SD </em>
   <p align="left">
-   <img src="https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green">
+   <img src="https://img.shields.io/badge/STATUS-TERMINADO-blue">  <img src="https://img.shields.io/badge/LICENSE-FREE-green">
    </p>
-   
 ## :hammer:Funcionalidad del proyecto
 - `Funcionalidad`: Entender el funcionamiento de Apache-kafka para streamming
 
@@ -60,35 +59,48 @@ Servidor
 	$npm run start:consumer
 ```
 
-<center><h1>BONUS++</h1></center>
+<h1 align='center'>BONUS++</h1>
 <p>El siguiente apartado corresponde al bonus que fue presentado en clases, en donde se siimula un servicio de procesamiento de flujo de datos en VIVO. Donde existe un contador de palabras que es guardado mediante un TOPIC en especifico. Todo esto mediante el uso de ApacheKafka</p>
+	
+📁 Acceso al proyecto
+	
 ```
-$sudo apt update
-$git clone https://github.com/Programming-with-Mati/kafka-streams-word-count
+	$sudo apt update
+	$git clone https://github.com/Programming-with-Mati/kafka-streams-word-count
 ```
+	
 Es importante descomprimir el .zip
 
 <p>Una vez dentro de la carpeta que fue descargada.</p>
+	
 ```
-$sudo docker-compose up
+	$sudo docker-compose up
 ```
+	
 ```
-$sudo ./mvnw compile exec:java -Dexec.mainClass="com.github.programmingwithmati.kafka.streams.wordcount.WordCountApp"
+	$sudo ./mvnw compile exec:java -Dexec.mainClass="com.github.programmingwithmati.kafka.streams.wordcount.WordCountApp"
+```
+	
 <p>El siguiente comando inicia la consola de KAFKA, que nos permitirá trabajar con comandos nativos de este.</p
+	
 ```
+	$sudo docker exec -it kafka /bin/bash
 ```
-$sudo docker exec -it kafka /bin/bash
+	
+ ```
+	$kafka-console-consumer --topic word-count --bootstrap-server localhost:9092 \
+ 	--from-beginning \
+ 	--property print.key=true \
+ 	--property key.separator=" : " \
+ 	--key-deserializer "org.apache.kafka.common.serialization.StringDeserializer" \
+ 	--value-deserializer "org.apache.kafka.common.serialization.LongDeserializer"
 ```
-```
-$kafka-console-consumer --topic word-count --bootstrap-server localhost:9092 \
- --from-beginning \
- --property print.key=true \
- --property key.separator=" : " \
- --key-deserializer "org.apache.kafka.common.serialization.StringDeserializer" \
- --value-deserializer "org.apache.kafka.common.serialization.LongDeserializer"
-```
+	
 <p>IMPORTANTE:abrir en otra consola de comandos.</p>
-$sudo docker exec -it kafka /bin/bash
+	
+```	
+	$sudo docker exec -it kafka /bin/bash
+```
 ```
 $kafka-console-producer --topic sentences --bootstrap-server localhost:9092
 
